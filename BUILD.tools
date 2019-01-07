@@ -1,0 +1,25 @@
+version = '2.12.6'
+
+jar_library(
+    name='scala-library',
+    jars=[
+        jar(
+            org='org.scala-lang',
+            name='scala-library',
+            rev=version,
+        ),
+    ],
+    scope='runtime'
+)
+
+jar_library(
+    name='scalac',
+    jars=[
+        jar(
+            org='org.scala-lang',
+            name='scala-compiler',
+            rev=version,
+        ),
+    ],
+    scope='compile'
+)
